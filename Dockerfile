@@ -10,8 +10,3 @@ RUN a2enmod rewrite
 
 #Reiniciar Apache
 RUN /etc/init.d/apache2 restart
-
-#INSTALAR PYTHON:
-RUN apt update
-
-RUN usermod -u ${uid} www-data \ && groupmod g ${uid} www-data;
